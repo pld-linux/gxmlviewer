@@ -6,7 +6,7 @@ Release:	2
 License:	GPL
 Group:		X11/Applications
 Source0:	http://prdownloads.sourceforge.net/gxmlviewer/%{name}-%{version}.tar.gz
-URL:		http://sourceforge.net/projects/gxmlviewer/
+URL:		http://gxmlviewer.sourceforge.net/
 BuildRequires:	ORBit-devel
 BuildRequires:	gdk-pixbuf-devel
 BuildRequires:	gnome-libs-devel
