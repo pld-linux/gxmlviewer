@@ -2,7 +2,7 @@ Summary:	GTK+ XML Viewer
 Summary(pl):	Przegl±darka plików XML w GTK+
 Name:		gxmlviewer
 Version:	1.2.0
-Release:	2
+Release:	3
 License:	GPL
 Group:		X11/Applications
 Source0:	http://prdownloads.sourceforge.net/gxmlviewer/%{name}-%{version}.tar.gz
@@ -38,6 +38,19 @@ A Bonobo control for viewing XML files.
 %description control -l pl
 Kontrola Bonobo do przegl±darki XML.
 
+%package -n mozilla-plugin-%{name}
+Summary:	Mozilla XML plugin
+Summary(pl):	Wtyczka XML do Mozilli
+Group:		X11/Applications
+Requires:	%{name} = %{version}
+Prereq:		mozilla-embedded
+
+%description -n mozilla-plugin-%{name}
+XML plugin for Mozilla.
+
+%description -n mozilla-plugin-%{name} -l pl
+Wtyczka z obs³ug± XML dla Mozilli.
+
 %prep
 %setup -q
 
@@ -62,9 +75,12 @@ rm -rf $RPM_BUILD_ROOT
 %files
 %defattr(644,root,root,755)
 %attr(755,root,root) %{_bindir}/gxmlviewer
-%{_libdir}/mozilla/plugins/npgxmlviewer.so
 
 %files control
 %defattr(644,root,root,755)
 %attr(755,root,root) %{_bindir}/xmlview-control
 %{_datadir}/oaf/GNOME_XMLView.oaf
+
+%files -n mozilla-plugin-%{name}
+%defattr(644,root,root,755)
+%{_libdir}/mozilla/plugins/npgxmlviewer.so
