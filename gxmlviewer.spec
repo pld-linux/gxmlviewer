@@ -48,7 +48,7 @@ rm -rf $RPM_BUILD_ROOT
 
 %{__make} install \
 	DESTDIR=$RPM_BUILD_ROOT \
-	PLUGIN_DIR=%{_libdir}/mizilla/plugins
+	PLUGIN_DIR=%{_libdir}/mozilla/plugins
 
 %clean
 rm -rf $RPM_BUILD_ROOT
