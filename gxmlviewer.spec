@@ -45,7 +45,7 @@ Kontrola Bonobo do przegl±darki XML.
 rm -f missing
 aclocal -I macros
 autoconf
-automake -a -c
+automake -a -c -f
 %configure
 %{__make}
 
