@@ -27,7 +27,7 @@ Przegl±darka plików XML oparta o GTK+.
 
 %package control
 Summary:	XML Viewer Bonobo Control
-Summary(pl):	Kontrola Bonobo do przegl±darki XML
+Summary(pl):	Kontrola Bonobo do przegl±darki XML-a
 Group:		X11/Applications
 Obsoletes:	xmlview-control
 
@@ -35,7 +35,7 @@ Obsoletes:	xmlview-control
 A Bonobo control for viewing XML files.
 
 %description control -l pl
-Kontrola Bonobo do przegl±darki XML.
+Kontrola Bonobo do przegl±darki XML-a.
 
 %package -n mozilla-plugin-%{name}
 Summary:	Mozilla XML plugin
@@ -48,7 +48,7 @@ PreReq:		mozilla-embedded
 XML plugin for Mozilla.
 
 %description -n mozilla-plugin-%{name} -l pl
-Wtyczka z obs³ug± XML dla Mozilli.
+Wtyczka z obs³ug± XML-a dla Mozilli.
 
 %prep
 %setup -q
