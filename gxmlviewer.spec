@@ -57,7 +57,7 @@ Wtyczka z obs³ug± XML dla Mozilli.
 
 %build
 rm -f missing
-aclocal -I macros
+%{__aclocal} -I macros
 %{__autoconf}
 %{__automake}
 %configure
