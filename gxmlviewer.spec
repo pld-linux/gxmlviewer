@@ -6,7 +6,10 @@ Release:	2
 License:	GPL
 Group:		X11/Applications
 Group(de):	X11/Applikationen
+Group(es):	X11/Aplicaciones
 Group(pl):	X11/Aplikacje
+Group(pt_BR):	X11/Aplicações
+Group(pt):	X11/Aplicações
 Source0:	http://prdownloads.sourceforge.net/gxmlviewer/%{name}-%{version}.tar.gz
 URL:		http://sourceforge.net/projects/gxmlviewer/
 BuildRequires:	ORBit-devel
@@ -33,7 +36,10 @@ Summary:	XML Viewer Bonobo Control
 Summary(pl):	Kontrola Bonobo do przegl±darki XML
 Group:		X11/Applications
 Group(de):	X11/Applikationen
+Group(es):	X11/Aplicaciones
 Group(pl):	X11/Aplikacje
+Group(pt_BR):	X11/Aplicações
+Group(pt):	X11/Aplicações
 Obsoletes:	xmlview-control
 
 %description control
