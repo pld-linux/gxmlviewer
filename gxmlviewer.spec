@@ -5,7 +5,7 @@ Version:	1.2.0
 Release:	4
 License:	GPL
 Group:		X11/Applications
-Source0:	http://prdownloads.sourceforge.net/gxmlviewer/%{name}-%{version}.tar.gz
+Source0:	http://dl.sourceforge.net/gxmlviewer/%{name}-%{version}.tar.gz
 URL:		http://gxmlviewer.sourceforge.net/
 BuildRequires:	ORBit-devel
 BuildRequires:	autoconf
