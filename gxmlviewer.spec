@@ -8,13 +8,14 @@ Group:		X11/Applications
 Source0:	http://prdownloads.sourceforge.net/gxmlviewer/%{name}-%{version}.tar.gz
 URL:		http://gxmlviewer.sourceforge.net/
 BuildRequires:	ORBit-devel
+BuildRequires:	autoconf
+BuildRequires:	automake
+BuildRequires:	bonobo-devel
 BuildRequires:	gdk-pixbuf-devel
 BuildRequires:	gnome-libs-devel
 BuildRequires:	imlib-devel
 BuildRequires:	libxml-devel
 BuildRequires:	oaf-devel
-BuildRequires:	autoconf
-BuildRequires:	automake
 BuildRoot:	%{tmpdir}/%{name}-%{version}-root-%(id -u -n)
 
 %define		_prefix		/usr/X11R6
