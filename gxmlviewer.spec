@@ -1,22 +1,23 @@
 Summary:	GTK+ XML Viewer
 Summary(pl):	Przegl±darka plików XML w GTK+
 Name:		gxmlviewer
-Version:	1.2.0
+Version:	1.3.3
 Release:	5
 License:	GPL
 Group:		X11/Applications
 Source0:	http://dl.sourceforge.net/gxmlviewer/%{name}-%{version}.tar.gz
-# Source0-md5:	00bb7d5e11082f47f461de06e8a9578c
+# Source0-md5:	e1f159e003e2ca99482ac7cf8677365e
+Patch0:		%{name}-libxml2.patch
 URL:		http://gxmlviewer.sourceforge.net/
 BuildRequires:	ORBit-devel
 BuildRequires:	autoconf
 BuildRequires:	automake
-BuildRequires:	bonobo-devel
+BuildRequires:	bonobo-devel >= 1.0.4
 BuildRequires:	gettext-devel
 BuildRequires:	gdk-pixbuf-devel
 BuildRequires:	gnome-libs-devel
 BuildRequires:	imlib-devel
-BuildRequires:	libxml-devel
+BuildRequires:	libxml2-devel >= 2.3.1
 BuildRequires:	oaf-devel
 BuildRoot:	%{tmpdir}/%{name}-%{version}-root-%(id -u -n)
 
@@ -53,10 +54,12 @@ Wtyczka z obs³ug± XML-a dla Mozilli.
 
 %prep
 %setup -q
+%patch0 -p1
 
 %build
 rm -f missing
-%{__aclocal} -I macros
+%{__gettextize}
+%{__aclocal} -I macros -I m4
 %{__autoconf}
 %{__automake}
 %configure
