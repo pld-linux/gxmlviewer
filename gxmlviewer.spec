@@ -13,8 +13,8 @@ BuildRequires:	ORBit-devel
 BuildRequires:	autoconf
 BuildRequires:	automake
 BuildRequires:	bonobo-devel >= 1.0.4
-BuildRequires:	gettext-devel
 BuildRequires:	gdk-pixbuf-devel
+BuildRequires:	gettext-devel
 BuildRequires:	gnome-libs-devel
 BuildRequires:	imlib-devel
 BuildRequires:	libxml2-devel >= 2.3.1
@@ -43,8 +43,8 @@ Kontrola Bonobo do przegl±darki XML-a.
 Summary:	Mozilla XML plugin
 Summary(pl):	Wtyczka XML do Mozilli
 Group:		X11/Applications
-Requires:	%{name} = %{version}
-PreReq:		mozilla-embedded
+Requires:	%{name} = %{version}-%{release}
+Requires:	mozilla-embedded
 
 %description -n mozilla-plugin-%{name}
 XML plugin for Mozilla.
