@@ -28,3 +28,16 @@
  #else
  #include <libxml/SAX.h>
  #include <libxml/parser.h>
+--- ./src/xmlview-control.c.orig	2001-11-20 03:25:48.000000000 +0100
++++ ./src/xmlview-control.c	2006-11-02 23:23:15.000000000 +0100
+@@ -11,8 +11,8 @@
+ #ifdef ENABLE_BONOBO
+ 
+ #include "xmlview-control.h"
+-#include <parser.h>
+-#include <parserInternals.h>
++#include <libxml/parser.h>
++#include <libxml/parserInternals.h>
+ 
+ #include "xmlparser.h"
+ #include "xmlwindow.h"
