@@ -2,12 +2,13 @@ Summary:	GTK+ XML Viewer
 Summary(pl):	Przegl±darka plików XML w GTK+
 Name:		gxmlviewer
 Version:	1.3.3
-Release:	1
+Release:	2
 License:	GPL
 Group:		X11/Applications
 Source0:	http://dl.sourceforge.net/gxmlviewer/%{name}-%{version}.tar.gz
 # Source0-md5:	e1f159e003e2ca99482ac7cf8677365e
 Patch0:		%{name}-libxml2.patch
+Patch1:		%{name}-no-nsplugin.patch
 URL:		http://gxmlviewer.sourceforge.net/
 BuildRequires:	ORBit-devel
 BuildRequires:	autoconf
@@ -42,6 +43,7 @@ Kontrola Bonobo do przegl±darki XML-a.
 %prep
 %setup -q
 %patch0 -p1
+%patch1 -p1
 
 %build
 rm -f missing
