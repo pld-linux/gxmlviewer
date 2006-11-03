@@ -20,6 +20,8 @@ BuildRequires:	gnome-libs-devel
 BuildRequires:	imlib-devel
 BuildRequires:	libxml2-devel >= 2.3.1
 BuildRequires:	oaf-devel
+# no more gtk1-based geckos
+Obsoletes:	mozilla-plugin-gxmlviewer
 BuildRoot:	%{tmpdir}/%{name}-%{version}-root-%(id -u -n)
 
 %description
@@ -46,7 +48,6 @@ Kontrola Bonobo do przegl±darki XML-a.
 %patch1 -p1
 
 %build
-rm -f missing
 %{__gettextize}
 %{__aclocal} -I macros -I m4
 %{__autoconf}
