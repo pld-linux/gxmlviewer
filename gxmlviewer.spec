@@ -1,5 +1,5 @@
 Summary:	GTK+ XML Viewer
-Summary(pl.UTF-8):   Przeglądarka plików XML w GTK+
+Summary(pl.UTF-8):	Przeglądarka plików XML w GTK+
 Name:		gxmlviewer
 Version:	1.3.3
 Release:	2
@@ -32,7 +32,7 @@ Przeglądarka plików XML oparta o GTK+.
 
 %package control
 Summary:	XML Viewer Bonobo Control
-Summary(pl.UTF-8):   Kontrola Bonobo do przeglądarki XML-a
+Summary(pl.UTF-8):	Kontrola Bonobo do przeglądarki XML-a
 Group:		X11/Applications
 Obsoletes:	xmlview-control
 
