@@ -15,7 +15,7 @@ BuildRequires:	autoconf
 BuildRequires:	automake
 BuildRequires:	bonobo-devel >= 1.0.4
 BuildRequires:	gdk-pixbuf-devel
-BuildRequires:	gettext-devel
+BuildRequires:	gettext-tools
 BuildRequires:	gnome-libs-devel
 BuildRequires:	imlib-devel
 BuildRequires:	libxml2-devel >= 2.3.1
